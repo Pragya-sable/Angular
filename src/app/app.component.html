@@ -2,6 +2,14 @@
   <h1>{{ message }}</h1>
   <img [src]="logoPath" alt="BridgeLabz Logo" width="200" (click)="openBridgeLabz()" 
   style="cursor: pointer;">  
+
+  <h1>{{ message }}, {{ userName }}</h1>
+
+  <input 
+    type="text" 
+    [(ngModel)]="userName" 
+    placeholder="Enter your name"
+  >
 </div>
-<router-outlet></router-outlet>
+
 
